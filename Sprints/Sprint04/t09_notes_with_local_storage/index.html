@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="t09. Notes">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Notes</title>
+  </head>
+  <body>
+
+    <div class="main">
+      <div class="input">
+        <input type="reset" id="add" value="Add to local storage">
+        <input type="submit" id="clear" value="Clear local storage">
+      </div>
+      <div class="text">
+        <span>Text input:</span>
+          <label for="textarea"></label><textarea cols="70" rows="5" maxlength="400" id="textarea" placeholder="Type something..."></textarea>
+      </div>
+      <div class="history">
+        <span>History:</span>
+        <div id="output"></div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

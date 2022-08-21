@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lazy loading</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="t08. Lazy loading">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Lazy loading</h1>
+        <div class="info">
+            <label><span id="num">2</span> images loaded from 20</label>
+        </div>
+        <div class="list">
+            <div>
+                <img src="https://i.ibb.co/7QNxd3N/1.jpg" width="700" height="500">
+            </div>
+            <div>
+                <img src="https://i.ibb.co/jWwxpcf/image.jpg" width="700" height="500">
+            </div>
+            <div>
+                <img class="lazy" src="https://i.ibb.co/svt3qQB/load.jpg" width="700" height="500" data-src="https://i.ibb.co/7vTZ1N1/1.jpg">
+            </div>
+            <div>
+                <img class="lazy" src="https://i.ibb.co/svt3qQB/load.jpg" width="700" height="500" data-src="https://i.ibb.co/c3Q0svH/maxresdefault.jpg">
+            </div>
+            <div>
+                <img class="lazy" src="https://i.ibb.co/svt3qQB/load.jpg" width="700" height="500" data-src="https://i.ibb.co/LgPxpLk/5270f44s-960.jpg">
+            </div>
+            <div>
+                <img class="lazy" src="https://i.ibb.co/svt3qQB/load.jpg" width="700" height="500" data-src="https://i.ibb.co/mTbMgJB/3.jpg">
+            </div>
+            <div>
+                <img class="lazy" src="https://i.ibb.co/svt3qQB/load.jpg" width="700" height="500" data-src="https://i.ibb.co/7JSjNjG/1.jpg">
+            </div>
+            <div>
+                <img class="lazy" src="https://i.ibb.co/svt3qQB/load.jpg" width="700" height="500" data-src="https://i.ibb.co/FwVD862/wr-780.jpg">
+            </div>
+            <div>
+                <img class="lazy" src="https://i.ibb.co/svt3qQB/load.jpg" width="700" height="500" data-src="https://i.ibb.co/Yd5m8vF/Screen-Shot-2022-02-20-at-4-01-20-PM.png">
+            </div>
+            <div>
+                <img class="lazy" src="https://i.ibb.co/svt3qQB/load.jpg" width="700" height="500" data-src="https://i.ibb.co/DLJ86h6/IMAGE-2022-02-20-16-00-27.jpg">
+            </div>
+            <div>
+                <img class="lazy" src="https://i.ibb.co/svt3qQB/load.jpg" width="700" height="500" data-src="https://i.ibb.co/31WFdgm/images.jpg">
+            </div>
+            <div>
+                <img class="lazy" src="https://i.ibb.co/svt3qQB/load.jpg" width="700" height="500" data-src="https://i.ibb.co/mbT9JXK/IMAGE-2022-02-20-15-53-33.jpg">
+            </div>
+            <div>
+                <img class="lazy" src="https://i.ibb.co/svt3qQB/load.jpg" width="700" height="500" data-src="https://i.ibb.co/c8ZZ3Ws/5ecd5031ae5ac937886cce77.jpg">
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

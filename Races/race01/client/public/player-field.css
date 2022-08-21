@@ -1,0 +1,166 @@
+body {
+  background: url('/public/assets/gamefon/gameZon.jpg') no-repeat;
+  background-size: cover;
+}
+
+#ally_field_cards {
+  display: flex;
+  justify-content: center;
+}
+#opponent_field_cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card_div {
+  display: flex;
+  justify-content: center;
+}
+.selected_card_div {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.base_opponent {
+  display: flex;
+  justify-content: center;
+}
+.hp {
+  position: absolute;
+  margin-left: -60px;
+  padding-top: 51px;
+  font-size: 8px;
+  color: white;
+}
+.diesel {
+  position: absolute;
+  margin-right: 60px;
+  font-size: 11px;
+  margin-top: 1px;
+  color: white;
+}
+.attack {
+  position: absolute;
+  margin-right: 58px;
+  font-size: 11px;
+  margin-top: 34px;
+  color: white;
+}
+
+.base_opponent {
+  display: flex;
+  justify-content: center;
+}
+
+.my_base {
+  display: flex;
+  justify-content: center;
+}
+
+#ally_field {
+  display: flex;
+  flex-direction: column;
+}
+
+#ally_base {
+  width: 10%;
+}
+
+#opponent_field {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#opponent_base {
+  width: 10%;
+}
+.diesel_unused {
+  width: 3%;
+}
+.diesel_used {
+  width: 3%;
+  opacity: 0.5;
+}
+.battlefield {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 20%;
+}
+.selected_card {
+  width: 20%;
+  background: rgba(255, 255, 255, 0.742);
+}
+#room_add {
+  display: flex;
+  padding-top: 55px;
+  align-items: center;
+  justify-content: center;
+}
+
+#room_list {
+  display: flex;
+  padding-top: 55px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.room_name_div {
+  width: 440px;
+  height: 62px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 30px;
+}
+#opponent_hp {
+  margin-top: 21px;
+  margin-right: 51px;
+  font-size: 17px;
+}
+#ally_hp {
+  position: absolute;
+  z-index: 1;
+  margin-top: 70px;
+  color: white;
+  margin-left: -114px;
+  font-size: 17px;
+}
+
+.label_fields {
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+}
+
+.room_name {
+  color: white;
+}
+
+#room_name_input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  outline: none;
+  margin-right: 10px;
+}
+
+.card_attack_button {
+  position: absolute;
+  width: 73px;
+  z-index: 1;
+  border-radius: 10%;
+  background: inherit;
+  color: white;
+  border: none;
+  margin-right: 2px;
+  font-size: 13px;
+  margin-top: 87px;
+}

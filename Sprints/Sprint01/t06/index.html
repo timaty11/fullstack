@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Muslim Shop</title>
+        <meta charset="utf-8">
+        <meta name="description" content="t07. Oscorp">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
+    </head>
+    <body>
+        <div class="header">
+            <div id="logo">
+                <img src="assets/images/logo.jpg" alt="MuslimShop logo">
+                <span>Muslim Shop</span>
+            </div>
+            <div id="search">
+                <input id="search" type="search" placeholder="ليكن ما تبحث عنه بسم الله">
+            </div>
+            <div id="info">
+                <a href="index.html"><span>CATALOG</span></a>
+                <a href="https://github.com/timaty11"><span>CONTACT</span></a>
+                <div id="phone">
+                    <span>Phone: +38(044)244-09-61</span>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="index.html">Catalog</a>
+        </div>
+        <div class="main">
+            <div class="filters">
+                <h2>FILTERS</h2>
+                <div>
+                    <form>
+                        <h3>Producing Country</h3>
+                        <input type="checkbox" id="Ukraine" name="Ukraine" class="custom-checkbox">
+                            <label for="Ukraine">Ukraine</label><br>
+                        <input type="checkbox" id="Turkey" name="Turkey" class="custom-checkbox">
+                            <label for="Turkey">Turkey</label><br>
+                    </form>
+                    <form>
+                        <h3>Product type</h3>
+                        <input type="checkbox" id="handmade" name="handmade" class="custom-checkbox">
+                            <label for="handmade">Handmade</label><br>
+                        <input type="checkbox" id="tech" name="tech" class="custom-checkbox">
+                            <label for="tech">Gadgets</label><br>
+                        <input type="checkbox" id="nft" name="nft" class="custom-checkbox">
+                            <label for="nft">NFT</label><br>
+                    </form>
+                    <form>
+                        <h3>Price</h3>
+                        <input type="range" name="pricing" id="range" min="1" max="1488" step="1" value="1"><br>
+                        <div id="rangenum"> 
+                            <label id="min">1</label>
+                            <label id="max">1488</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="list">
+                <div class="page_head">
+                    <div id="number">
+                        <h2>CATALOG</h2>
+                        <span><b>PRODUCTS:</b> ( 1 - 3 )</span>
+                    </div>
+                    <div id="pages">
+                        <span>SORT BY:</span>
+                        <select class="custom-select">
+                            <option>Price (low to high)</option>
+                            <option>Price (high to low)</option>
+                            <option>Revelance</option>
+                            <option>Newest</option>
+                        </select>
+                        <span>ITEMS PER PAGE:</span>
+                        <select class="custom-select">
+                            <option>9</option>
+                            <option>27</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="page_body">
+                    <a href="card.html">
+                        <div class="item">
+                            <img src="assets/images/Product-4ainik.jpg">
+                            <h3>4ainik NFT</h3>
+                            <span>$15.99</span>
+                            <label>BUY</label>
+                        </div>
+                    </a>
+                    <a href="card.html">
+                        <div class="item">
+                            <img src="assets/images/Product-Headphones.png">
+                            <h3>Headphones - Hyper EKES<br>EKES EKES</h3>
+                            <span>$133.70</span>
+                            <label>BUY</label>
+                        </div>
+                    </a>
+                    <a href="card.html">
+                        <div class="item">
+                            <img src="assets/images/Product-Phone.jpg">
+                            <h3>Shahid Phone</h3>
+                            <span>$1488.00</span>
+                            <label>BUY</label>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <a href="https://github.com/timaty11" target="_blank">Copyright &#169; MuslimShop | timaty11 | All Rights Reserved</a>
+    </footer>
+</html>

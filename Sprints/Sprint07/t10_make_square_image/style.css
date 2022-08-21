@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#images {
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}

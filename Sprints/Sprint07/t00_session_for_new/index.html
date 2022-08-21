@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			#age {
+    			width: 45px;
+			}
+
+			label, input, button {
+    			margin: 20px 2px;
+			}
+		</style>
+    </head>
+    <body>
+        <h1>Session for new</h1>
+        <form id="main-form" action="/login" method="POST">
+            <fieldset>
+                <fieldset>
+                    <legend>About HERO</legend>
+                    <label for="name">Real Name</label>
+                    <input id="name" type="text" name="name" placeholder="Tell your real name" size="25" required>
+                    <label for="alias">Current Alias</label>
+                    <input id="alias" type="text" name="alias" placeholder="Tell your current alias" required>
+                    <label for="age">Age</label>
+                    <input id="age" type="number" name="age" min="1" max="1000" required><br>
+                    <label for="about">About</label>
+                    <textarea id="about" name="description" placeholder="Tell about yourself, max 500 symbols"
+						rows="5" cols="75" maxlength="500" required></textarea><br>
+                    <label for="photo">Photo:</label>
+                    <input id="photo" type="file" name="photo">
+                </fieldset>
+				<fieldset>
+					<legend>Powers</legend>
+					<input id="strength" type="checkbox" name="pw_strength">
+					<label for="strength">Strength</label>
+					<input id="speed" type="checkbox" name="pw_speed">
+					<label for="speed">Speed</label>
+					<input id="intel" type="checkbox" name="pw_intel">
+					<label for="intel">Intelligence</label>
+					<input id="tp" type="checkbox" name="pw_tp">
+					<label for="tp">Teleportation</label>
+					<input id="immortal" type="checkbox" name="pw_immortal">
+					<label for="immortal">Immortal</label>
+					<input id="another" type="checkbox" name="pw_another">
+					<label for="another">Another</label>
+					<div>
+						<label for="level">Level of control:</label>
+						<input id="level" type="range" name="level" value="0" step="1" min="0" max="10" required>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Publicity</legend>
+					<input id="unknown" type="radio" name="pb_unknown">
+					<label for="unknown">UNKNOWN</label>
+					<input id="ghost" type="radio" name="pb_ghost">
+					<label for="ghost">LIKE A GHOST</label>
+					<input id="comics" type="radio" name="pb_comics">
+					<label for="comics">I AM IN COMICS</label>
+					<input id="club" type="radio" name="pb_club">
+					<label for="club">I HAVE FUN CLUB</label>
+					<input id="superstar" type="radio" name="pb_superstar">
+					<label for="superstar">SUPERSTAR</label>
+				</fieldset>
+				<button type="reset">CLEAR</button>
+				<button type="submit">SEND</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

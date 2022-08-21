@@ -1,0 +1,45 @@
+body {
+    justify-content: space-evenly;
+    display: grid;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.html, .css, .protocols {
+    grid-column-gap: 50px;
+}
+
+.statement {
+    background: white;
+    border: solid 1px black;
+    padding: 5px;
+    width: 300px;
+    margin: 5px;
+    float: left;
+}
+
+.back {
+    background: lightblue;
+}
+
+.opacity {
+    background: lightcoral;
+}
+
+.opacity:hover {
+    opacity: 0.8;
+}
+
+.bor {
+    border-bottom: 2px solid #666;
+}
+
+.size {
+    font-size: 24px;
+}
+
+p {
+    margin: 0;
+}

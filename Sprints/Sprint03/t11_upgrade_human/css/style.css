@@ -1,0 +1,112 @@
+div[id = "div"] {
+    width: 450px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* background: linear-gradient(darkred, black); */
+    background: linear-gradient(rgb(3, 44, 79), rgb(199, 207, 210) 70%);
+}
+img {
+    width: 400px;
+    padding: 25px;
+}
+
+div[id = "div"] img[id = "super_img"] {
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+div[id = "div"] label[id = "name"]{
+    margin-left: 0px;
+    color: darkblue;
+    font: 1em sans-serif;
+}
+
+div[id = "div"] label{
+    margin-left: 5px;
+    color: darkblue;
+    font: bold 1em sans-serif;
+}
+div[id = "div"] button {
+    margin-left: 25px;
+    height: 40px;
+    width: 150px;
+}
+div[id = "div"] button[id = "feed"] {
+    margin-left: 10px;
+}
+div[id = "div"] button[id = "trans"] {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;    
+    margin-left: 10px;
+    background: radial-gradient(red, black);
+    color: white;
+    font: bold 14px sans-serif;
+} 
+div[id = "div"] p {
+    text-align: center;
+    color: darkblue;
+    font: bold 1em sans-serif;
+}
+table {
+    margin-left: 25px;
+
+}
+div[id = "div"] table tr td {
+    border-bottom:  1px darkblue dashed;
+}
+
+div[id = "super"] {
+    width: 450px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* background: linear-gradient(darkred, black); */
+    background: linear-gradient(darkred, black);
+}
+div[id = "super"] label[id = "name"]{
+    margin-left: 0px;
+    color: rgb(255, 255, 255);
+    font: 1em sans-serif;
+}
+
+div[id = "super"] label{
+    margin-left: 5px;
+    color: rgb(255, 255, 255);
+    font: bold 1em sans-serif;
+}
+div[id = "super"] button[id = "sleep"] {
+    margin-top: 50px;
+    margin-left: 25px;
+    height: 40px;
+    width: 150px;
+}
+div[id = "super"] button[id = "feed"] {
+    margin-left: 10px;
+    height: 40px;
+    width: 150px;
+}
+div[id = "super"] button[id = "trans"] {
+    width: 80px;
+    opacity: 0;
+} 
+div[id = "super"] p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font: bold 1em sans-serif;
+}
+
+div[id = "super"]  table tr td {
+    border-bottom:  1px rgb(255, 255, 255) dashed;
+}
+div[id = "super"] img[id = "human_img"] {
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+    padding: 0px;
+}

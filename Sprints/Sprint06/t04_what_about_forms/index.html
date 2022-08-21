@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:thjs="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="t04. What about forms?">
+    <title>What about forms?</title>
+
+</head>
+
+<body>
+    <h1>What Thanos did for the Soul Stone?</h1>
+
+    <form action="/" method="post">
+        <input id="1" name="answer" type="radio" value="wrong">
+        <label for="1">Jumped from the mountain</label><br>
+        <input id="2" name="answer" type="radio" value="wrong">
+        <label for="2">Made stone keeper to jump from the mountain</label><br>
+        <input id="3" name="answer" type="radio" value="correct">
+        <label for="3">Pushed Gamora off the mountain</label><br><br>
+        <button type="submit">I made a choice</button><br>
+        <p thjs:text="${answer}"></p>
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-thymeleaf": "^0.3.0"
+  }
+}

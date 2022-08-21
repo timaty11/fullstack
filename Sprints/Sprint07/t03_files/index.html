@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .row {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>File manager</h1>
+        <fieldset>
+            <h2>Create a file</h2>
+            <form action="/" method="post">
+                <div class="row">
+                    <label>Filename</label>
+                    <input name="filename" type="text" required>
+                </div>
+                <div class="row">
+                    <label>Content</label>
+                    <textarea name="content" cols="100" rows="15" required></textarea>
+                </div>
+                <button type="submit">Create file</button>
+            </form>
+        </fieldset>
+        <fieldset>
+            <h2>Files:</h2>
+            <div class="row">
+                <span thjs:each="list: ${list}" thjs:utext="${list}"></span>
+            </div>
+        </fieldset>
+        <fieldset id="selected_file" style="display: none;">
+            <form method="post">
+                <h2>Selected file:</h2>
+                <div class="row">
+                    <h3 id="file_name" name="file_name" thjs:text="${filename}"></h3>
+                </div>
+                <div class="row">
+                    <label for="file_content">Content:</label>
+                    <p id="file_content" name="file_content" thjs:text="${content}"></p>
+                </div>
+                <button type="submit">Delete file</button>
+            </form>
+        </fieldset>
+        <script src=script.js type="text/javascript"></script>
+    </body>
+</html>

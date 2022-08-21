@@ -1,0 +1,190 @@
+body {
+    background-color: #3a4551;
+}
+
+h1 {
+    color: #d6d8da;
+    text-align:  center;
+}
+
+h4 {
+    color: #8d9399; /* Цвет символа */
+}
+
+label {
+    color: #8d9399;
+}
+
+.side-menu {
+    display: none;
+}    
+
+@media screen and (min-width: 768px) {
+    .side-menu {
+        box-sizing: border-box;
+        position: fixed;
+        display: block;
+        top: 200px;
+        right: 0;
+        z-index: 9999999;
+    }     
+
+    .side-menu-buttons {
+        position: absolute;
+        top: 0; 
+        right: -2px;
+        border: 2px solid #BFE2FF;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0 4px 4px rgba(0,0,0,0.2), 0 10px 18px rgba(0,0,0,0.2);
+    }
+
+    .side-menu-item:first-child {
+        border-top-left-radius: 10px;
+    }
+
+    .side-menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        width: 74px;
+        height: 74px;
+        position: relative;
+        background-color:  rgb(37, 36, 36);
+    }
+    
+    .side-menu-item:last-child {
+        border-bottom-left-radius: 10px;
+    }
+
+    .side-menu-item:not(:last-child) {
+        border-bottom: 2px solid #BFE2FF;
+    }
+
+    .side-menu-item img {
+        height: 40px;
+    }
+
+    .side-menu-item i, .side-menu-item span {
+        font-size: 40px;
+        color: #000;
+        transition: color 0.3s;
+    }
+
+    .side-menu-item svg {
+        stroke: #000;
+        height: 40px;
+        stroke-miterlimit: 10;
+        stroke-dasharray: 400;    
+        stroke-width: 2;
+        stroke-linecap: round; 
+        stroke-linejoin: round;
+        fill: none;
+        transition: stroke 0.3s;
+    }
+
+    @keyframes strok {
+        100% {
+            stroke-dashoffset: 400;
+        }
+    }
+
+    .side-menu-hover {
+        position: absolute;
+        background-color: #44515f;
+        color: #FFF;
+        border: 2px solid #BFE2FF;
+        padding: 200px 200px;
+        transform: translateX(0);
+        left: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all 0.2s;
+        z-index: -100;
+        font-size: 16px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .side-menu-item:hover .side-menu-hover {
+        opacity: 1;
+        transform: translateX(-100%);
+    }    
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display:none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2c3741;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #4CAF50;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.seldiv {
+    height: 160px;
+    width:300px;
+    border-radius: 15px;
+    padding:20px;
+    font-size:22px;
+    color:#fff;  
+}
+
+#selectvalue {
+    background-color: #2c3741;
+    color: #8d9399;
+}

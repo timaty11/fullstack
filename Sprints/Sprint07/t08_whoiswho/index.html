@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table {
+                border: 1px solid black;
+                width: 100%;
+                text-align: center;
+            }
+            td, th{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Parsing CSV data</h1>
+        <form action="/" method="post">
+            <label for="file">Upload file: </label>
+            <input type="file" name="inputFile">
+            <input type="submit" value="Upload">
+        </form>
+        <p><div id="filter" style="display: none;">
+            <label for="">Filter: </label>
+            <select id="selector"></select>
+            <button onclick="filter()">APPLY</button>
+        </div></p>
+        <p><div id="table"></div></p>
+        <script src="script.js"></script>
+    </body>
+</html>

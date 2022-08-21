@@ -1,0 +1,27 @@
+body {
+  background: #ececec;
+}
+#error {
+  margin: 0 auto;
+  display: block;
+}
+.button__home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#errorLink {
+  margin-top: 100px;
+  font-size: 50px;
+  padding: 12px;
+  border: 1px solid;
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+#errorLink:hover,
+#errorLink:active {
+  color: #fff;
+  background: #000;
+}

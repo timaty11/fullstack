@@ -1,0 +1,76 @@
+.input
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+body
+{
+    padding: 15% 15%;
+}
+
+.input input
+{
+    padding: 3% 6%;
+    border: none;
+    border-radius: 5px;
+}
+
+.input input[type=reset]
+{
+    background-color: rgb(255, 209, 70);
+    color: white;
+}
+
+.input input[type=submit]
+{
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.text span, .history span
+{
+    font-weight: 300;
+    font-size: 1em;
+    text-align: start;
+    margin-bottom: 3%;
+    color: rgb(255, 209, 70);
+}
+
+.text, .history
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    margin: 3% 0;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.text textarea
+{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+#output
+{
+    font-weight: 300;
+    font-size: .8em;
+    background: white;
+    padding: 5px;
+    width: 95%;
+    border-radius: 5px;
+}
+

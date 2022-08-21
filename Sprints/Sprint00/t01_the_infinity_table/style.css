@@ -1,0 +1,52 @@
+table {
+    border-collapse: collapse;
+}
+
+.table_head {
+    background-color: black;
+    color: white;
+}
+
+.table_text {
+    border : 2px white solid;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+.table_image {
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.table_link {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.row_Soul {
+    background-color: orange;
+}
+
+.row_Time {
+    background-color: green;
+}
+
+.row_Space {
+    background-color: blue;
+}
+
+.row_Mind {
+    background-color: yellow;
+}
+
+.row_Reality {
+    background-color: red;
+}
+
+.row_Power {
+    background-color: purple;
+}

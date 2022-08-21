@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handbook</title>
+        <meta charset="utf-8">
+        <meta name="description" content="t03. Handbook">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Handbook</h1>
+        <h2>HTML</h2>
+        <div class="html">
+            
+            <div class="statement">
+                <h3>h1</h3>
+                <p>The h1 to h6 tags are used to degine HTML headings</p>
+                <h6>&#60;h1&#62;Title&#60;/h1&#62;</h6>
+                <h3>Title</h3>
+            </div>
+            <div class="statement">
+                <h3>table</h3>
+                <p>Defines an HTML table</p>
+                <h6>&#60;table&#62;&#60;/table&#62;</h6>
+                <table>
+                    <thead>
+                        <th>Column1</th>
+                        <th>Column2</th>
+                        <th>Column3</th>
+                    </thead>
+                    <tbody>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="statement">
+                <h3>button</h3>
+                <p>Clickable button</p>
+                <h6>&#60;button&#62;Button&#60;/button&#62;</h6>
+                <button>Button</button>
+            </div>
+            <div class="statement">
+                <h3>div</h3>
+                <p>Defines a division or a section in an HTML document<br>align,title<br></p>
+                <h6><code>&lt;div&gt;...&lt;/div&gt;</code></h6>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh</p>
+            </div>
+        </div>
+        <h2>CSS</h2>
+        <div class="css">
+            <div class="statement">
+                <h3>font-size</h3>
+                <p>Specifies the font size of the item. &, px, rem</p>
+                <h6>font-size: 24px;</h6>
+                <p class="size">Lorem ipsum dolor sit amet, consectetur adipisicingelit. Patione, esse.</p>
+            </div>
+            <div class="statement">
+                <h3>border</h3>
+                <p>Specifies the style of the outline</p>
+                <h6>border-bottom: 2px solid #666;</h6>
+                <p class="bor">Text</p>
+            </div>
+            <div class="statement">
+                <h3>backgroound</h3>
+                <p>Specifies the backgroound of an element</p>
+                <h6>backkground: [];</h6>
+                <p class="back">Text</p>
+            </div>
+            <div class="statement">
+                <h3>opacity</h3>
+                <p>Specifies the opacity of an element</p>
+                <p class="opacity">Text</p>
+            </div>
+        </div>
+        <h2>PROTOCOLS</h2>
+        <div class="protocols">
+            <div class="statement">
+                <h3>HTTP</h3>
+                <p>GET - use this type of requests to retrieve resource representation/information only - and not to modify it in any way</p>
+                <p>POST - used too create a new resourse into the collection of resourses</p>
+                <p>PUT - use it primarily to update existing resourse</p>
+                <p>DELETE - used to deleteresourses</p>
+                <p>PATCH - HTTP PATCH requests are to make partial update on a resourses</p>
+            </div>
+            <div class="statement">
+                <h3>HTTP status codes</h3>
+                <p>1xx: Informational example: 100 continue</p>
+                <p>2xx: Success example: 201 created</p>
+                <p>3xx: Redirection example: 301 moved ermanently</p>
+                <p>4xx; Client error example: 404 Not Found</p>
+                <p>5xx: Server error example: 500 Internal server error</p>
+            </div>
+            <div class="statement">
+                <h3>DNS list by types</h3>
+                <p>A -  Returns a 32-bit IPv4 address, most commonly used to map hostnames to an IP address of the host, but it is also used for DNSBLs, storing subnet masks in RFC 1101, etc.</p>
+                <p>AAAA - Returns a 128-bit IPv6 address, most commonly used to map hostnames to an IP address of the host.</p>
+                <p>APL - Specify lists of address ranges, e.g. in CIDR format, for various address families. Experimental.</p>
+                <p>CNAME - Alias of one name to another: the DNS lookup will continue by retrying the lookup with the new name.</p>
+            </div>
+            <div class="statement">
+                <h3>Identifying google`s IP</h3>
+                <p>To identify goodle.com IP, follow the next steps:</p>
+                <p>1. open Terminal</p>
+                <p>paste and run the command nslookup google.com</p>
+                <p>As result, you will receive "name" and "addess":</p>
+                <p>Name: google.com</p>
+                <p>Address: 216.58.215.99</p>
+                <p>Repeat step  and 2 to identify google.com.ua IP</p>
+            </div>
+        </div>
+    </body>
+</html>

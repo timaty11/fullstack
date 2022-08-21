@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <meta name="description" content="Calculator">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        
+        <div class="mid">  
+            <div class="elem input">0</div> 
+        
+            <div class="elem tan" onclick="trigonom('tan')">tan</div>
+            <div class="elem ctg" onclick="trigonom('ctg')">ctg</div>
+            <div class="elem sin" onclick="trigonom('sin')">sin</div>
+            <div class="elem cos" onclick="trigonom('cos')">cos</div>
+            <div class="elem type">deg</div>
+            <div class="elem x" onclick="sqrt_operations('^')">x<span class="upper">y</span></div>
+            <div class="elem lg" onclick="log('lg')">lg</div>
+            <div class="elem ln" onclick="log('ln')">ln</div>
+            <div class="elem clean" onclick="clean()">C</div>
+            <div class="elem back" onclick="backspace()">&lArr;</div>
+      
+            <div class="elem x2" onclick="sqrt_operations('sqr')">x<span class="upper">2</span></div>
+            <div class="elem skobka1" onclick="inp_insert('(')">(</div>
+            <div class="elem skobka2" onclick="inp_insert(')')">)</div>
+
+            <div class="elem percent" onclick="percent()">%</div>
+            <div class="elem divide" onclick="inp_insert('/')">&divide;</div>
+      
+            <div class="elem x3" onclick="fact()">x!</div>
+            <div class="elem seven" onclick="inp_insert('7')">7</div>
+            <div class="elem eight" onclick="inp_insert('8')">8</div>
+            <div class="elem nine" onclick="inp_insert('9')">9</div>
+            <div class="elem mul" onclick="inp_insert('*')">&times;</div>
+      
+            <div class="elem corX" onclick="sqrt_operations('sqrt')">&radic;x</div>
+            <div class="elem four" onclick="inp_insert('4')">4</div>
+            <div class="elem five" onclick="inp_insert('5')">5</div>
+            <div class="elem six" onclick="inp_insert('6')">6</div>
+            <div class="elem sub" onclick="inp_insert('-')">-</div>
+      
+            <div class="elem x1" onclick="sqrt_operations('^-1')">x<span class="upper">-1</span></div>
+            <div class="elem one" onclick="inp_insert('1')">1</div>
+            <div class="elem too" onclick="inp_insert('2')">2</div>
+            <div class="elem three" onclick="inp_insert('3')">3</div>
+            <div class="elem add" onclick="inp_insert('+')">+</div>
+      
+            <div class="elem Pi" onclick="constant('pi')">&prod;</div>
+            <div class="elem ecsp" onclick="constant('e')">e</div>
+            <div class="elem zero" onclick="inp_insert('0')">0</div>
+            <div class="elem coma" onclick="inp_insert('.')">,</div>
+            <div class="elem equal" onclick="count_button_clicked()">=</div>
+        </div>
+
+        <script src="js/script.js"></script>
+            
+    </body>
+</html>
